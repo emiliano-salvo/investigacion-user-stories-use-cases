@@ -9,6 +9,17 @@
 ### Historias de usuario
 Las historias de usuario son una herramienta que agiliza la administración de requisitos, reduciendo la cantidad de documentos formales y tiempo necesarios. Se usan, en el contexto de la ingeniería de requisitos ágil, como una herramienta de comunicación que combina las fortalezas de ambos medios: escrito y verbal. Describen, en una o dos frases, una funcionalidad de software desde el punto de vista del usuario, con el lenguaje que éste emplearía (Mike Cohn 2004). El foco está
 puesto en qué necesidades o problemas soluciona lo que se va a construir.
+
+### Flujo de Creacion (3 C’s)
+
+- **Card**
+Cada historia se reduce a un post-it (card) tal que sea facil de memorizar.
+La tarjeta representa una promesa a una conversacion futura.
+- **Conversation**
+Los equipo de desarrollo tecnico y de producto definen criterios de aceptaciona cada tarjeta antes de implementar.
+- **Confirmation** 
+El equipo de producto confirma que el equipo de desarrollo ha entendido los requisitos.
+
 ## Anatomía de las historias
 
 Es preferible no adoptar formatos rígidos. Además de los campos necesarios, también podemos incluir aquellos que proporcionen información útil.
