@@ -27,3 +27,21 @@ Es preferible no adoptar formatos rígidos. Además de los campos necesarios, ta
 | **Valor de negocio** | Se considera cuánto está dispuesto a pagar el cliente. Es un campo volátil (se recomienda usar escala de Fibonacci). |
 | **Prioridad** | Clasificación:<br>• Must have<br>• Should have<br>• Could have<br>• Won't have |
 | **Criterios de aceptación** | Método **SMART** (Specific, Measurable, Achievable, Relevant, Time-Boxed).<br><br>**Estrategia:**<br>Escenario [número] [título]<br>Dado que [contexto]<br>Cuando [evento]<br>Entonces [resultados] |
+
+### Casos de Uso
+Los casos de uso son otra técnica más que a veces se incorpora en los procesos ágiles,
+pero no son equivalentes a las historias de usuario. Conviene diferenciar los unos de las
+otras para evitar confusiones.
+
+Un caso de uso captura la funcionalidad deseada desde la perspectiva de los usuarios
+(actores) y cómo interactúan con el sistema. Se escriben usando UML (unified modeling
+language) en los diagramas de casos de uso. UML es un lenguaje de modelado para
+describir, de forma sencilla, un sistema desde sus perspectivas estática y dinámica.
+
+Sus componentes son:
+- Actores: los roles que interactúan con el sistema.
+- Precondiciones: estado del sistema antes de ejecutar el caso de uso.
+- Flujo principal: secuencia de pasos en el escenario exitoso.
+- Flujos alternativos: variaciones del flujo principal.
+- Flujos de excepción: qué ocurre cuando algo falla.
+- Postcondiciones: estado del sistema después de ejecutar el caso de uso.
