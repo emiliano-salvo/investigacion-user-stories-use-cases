@@ -53,7 +53,7 @@ UML , acrónimo de Lenguaje Unificado de Modelado, es un lenguaje de modelado e
 ## 3. Demostracion practica
 ---
 
-## 1. Historia de Usuario: "Préstamo de Libro"
+### 3.1. Historia de Usuario: "Préstamo de Libro"
 
 **Como** Bibliotecario, **quiero** registrar el préstamo de un libro a un socio, **para** mantener un control de quién tiene cada ejemplar y cuándo debe devolverlo.
 
@@ -65,7 +65,7 @@ UML , acrónimo de Lenguaje Unificado de Modelado, es un lenguaje de modelado e
 
 ---
 
-## 2. Casos de Uso
+### 3.2. Casos de Uso
 
 1. **Registrar Préstamo:** El bibliotecario ingresa el ID del socio y el ID del libro para crear el registro.
 2. **Consultar Disponibilidad:** El sistema verifica si el libro está en estante o ya está prestado.
@@ -73,7 +73,7 @@ UML , acrónimo de Lenguaje Unificado de Modelado, es un lenguaje de modelado e
 
 ---
 
-## 3. Modelo de Dominio
+### 3.3. Modelo de Dominio
 
 - **Socio:** Atributos como `nombre`, `idSocio`, `estadoCuenta`.
 - **Libro:** Atributos como `titulo`, `idLibro`, `disponible` (booleano).
