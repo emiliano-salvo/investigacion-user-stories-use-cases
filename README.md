@@ -93,3 +93,38 @@ UML , acrónimo de Lenguaje Unificado de Modelado, es un lenguaje de modelado e
 - Un **Socio** tiene muchos **Préstamos**.
 - Un **Libro** puede estar en muchos **Préstamos** (a lo largo del tiempo), pero solo en uno activo a la vez.
 - El **Préstamo** conecta al **Socio** con el **Libro**.
+
+
+---
+
+## 4. Tech Stack del Proyecto de Demostración
+
+> Sistema de gestión de biblioteca corriendo en infraestructura cloud AWS.
+
+### Backend
+| Tecnología | Rol |
+| :--- | :--- |
+| **Node.js** | Runtime del servidor |
+| **Express.js** | Framework HTTP / Router |
+| **MySQL** | Base de datos relacional (Aurora Serverless en AWS) |
+
+### Frontend
+| Tecnología | Rol |
+| :--- | :--- |
+| **Vanilla JS ES6** | Lógica del cliente (sin frameworks) |
+| **HTML5** | Estructura de la UI |
+| **CSS3** | Estilos y layout responsive |
+
+### Infraestructura
+| Tecnología | Rol |
+| :--- | :--- |
+| **AWS EC2** | Servidor de aplicación |
+| **AWS Aurora Serverless (MySQL)** | Base de datos gestionada sin servidor |
+| **Docker** | Contenedor de la app Node.js (sin orquestación definida) |
+
+### Casos de Uso implementados en el sistema
+| # | Caso de Uso | Endpoint REST |
+| :--- | :--- | :--- |
+| CU-01 | Registrar Préstamo | POST /api/prestamos |
+| CU-02 | Consultar Disponibilidad | GET /api/libros/:id/disponibilidad |
+| CU-03 | Registrar Devolución | PUT /api/prestamos/:id/devolucion |
