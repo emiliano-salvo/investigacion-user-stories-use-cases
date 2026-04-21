@@ -6,7 +6,8 @@
 - Visual paradigm: https://www.visual-paradigm.com/guide/uml-unified-modeling-language/what-is-uml/
 
 ## 2. Definiciones
-Las **historias de usuario** son una herramienta que agiliza la administración de requisitos, reduciendo la cantidad de documentos formales y tiempo necesarios. Se usan, en el contexto de la ingeniería de requisitos ágil, como una herramienta de comunicación que combina las fortalezas de ambos medios: escrito y verbal. Describen, en una o dos frases, una funcionalidad de software desde el punto de vista del usuario, con el lenguaje que éste emplearía (Mike Cohn 2004). El foco está
+### Historias de usuario
+Las historias de usuario son una herramienta que agiliza la administración de requisitos, reduciendo la cantidad de documentos formales y tiempo necesarios. Se usan, en el contexto de la ingeniería de requisitos ágil, como una herramienta de comunicación que combina las fortalezas de ambos medios: escrito y verbal. Describen, en una o dos frases, una funcionalidad de software desde el punto de vista del usuario, con el lenguaje que éste emplearía (Mike Cohn 2004). El foco está
 puesto en qué necesidades o problemas soluciona lo que se va a construir.
 ## Anatomía de las historias
 
@@ -45,3 +46,39 @@ Sus componentes son:
 - Flujos alternativos: variaciones del flujo principal.
 - Flujos de excepción: qué ocurre cuando algo falla.
 - Postcondiciones: estado del sistema después de ejecutar el caso de uso.
+
+### UML
+UML , acrónimo de Lenguaje Unificado de Modelado, es un lenguaje de modelado estandarizado que consta de un conjunto integrado de diagramas, desarrollado para ayudar a los desarrolladores de sistemas y software a especificar, visualizar, construir y documentar los artefactos de los sistemas de software, así como para el modelado de negocios y otros sistemas no relacionados con el software.
+
+## 3. Demostracion practica
+---
+
+## 1. Historia de Usuario: "Préstamo de Libro"
+
+**Como** Bibliotecario, **quiero** registrar el préstamo de un libro a un socio, **para** mantener un control de quién tiene cada ejemplar y cuándo debe devolverlo.
+
+**Criterios de Aceptación:**
+
+- El sistema debe verificar que el libro esté disponible.
+- Se debe registrar la fecha de inicio y la fecha de devolución (7 días después).
+- Un socio no puede llevarse un libro si tiene deudas pendientes.
+
+---
+
+## 2. Casos de Uso
+
+1. **Registrar Préstamo:** El bibliotecario ingresa el ID del socio y el ID del libro para crear el registro.
+2. **Consultar Disponibilidad:** El sistema verifica si el libro está en estante o ya está prestado.
+3. **Registrar Devolución:** El bibliotecario marca el libro como disponible nuevamente al recibirlo.
+
+---
+
+## 3. Modelo de Dominio
+
+- **Socio:** Atributos como `nombre`, `idSocio`, `estadoCuenta`.
+- **Libro:** Atributos como `titulo`, `idLibro`, `disponible` (booleano).
+- **Préstamo:** Esta es la clase "vínculo". Atributos como `fechaInicio`, `fechaDevolucion`.
+
+- Un **Socio** tiene muchos **Préstamos**.
+- Un **Libro** puede estar en muchos **Préstamos** (a lo largo del tiempo), pero solo en uno activo a la vez.
+- El **Préstamo** conecta al **Socio** con el **Libro**.
